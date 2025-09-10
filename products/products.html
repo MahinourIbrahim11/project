@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>welcome to products page</h1>
+
+<ul>
+    {% for product in products %}
+    <li>{{ product.name }} - {{ product.price }} - {{ product.description }} </li>
+    <img src="{{ product.images.url }}" style="max-width: 300px; height: auto;">
+    {% endfor %}
+</ul>
+
+{% endblock %}

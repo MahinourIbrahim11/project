@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{# This is single line comment #}
+
+{% comment %}
+This is a multi-line comment
+It can span multiple lines
+{% endcomment %}
+
+{% block content %}
+<h1>this is home page</h1>
+
+{% for i in name %}
+    <h2>{{ i }}</h2>
+{% endfor %}
+
+{% endblock content %}
